@@ -10,7 +10,14 @@ import SwiftUI
 
 class ContentModel: ObservableObject{
     
+    //List of modules
     @Published var modules = [Module]()
+    
+    //Current module
+    @Published var currentModule: Module?
+    var currentModuleIndex = 0
+    
+    
     var styleData: Data?
     
     init(){
@@ -18,6 +25,7 @@ class ContentModel: ObservableObject{
         
     }
 
+    //MARK: - Data methods
     func getLocalData() {
         //get url to JSON file
         let jsonUrl = Bundle.main.url(forResource: "data", withExtension: "json")
@@ -59,5 +67,22 @@ class ContentModel: ObservableObject{
         
     }
     
+    
+    //MARK: -Module Navigation methods
+    
+    func beginModule(_ moduleid: Int){
+        
+        //Find the index for this module id
+        for index in 0..<modules.count {
+            if modules[index].id == moduleid{
+                currentModuleIndex = index
+                break
+            }
+        }
+        
+        //Set the current module
+        currentModule = modules[currentModuleIndex]
+        
+    }
     
 }
