@@ -48,13 +48,14 @@ struct HomeView: View {
                             
                         }
                     }
-                    .accentColor(.black)
+                    .tint(.black)
                     .padding()
                 }
             }
             .navigationTitle("Get Started")
             
         }
+        .navigationViewStyle(.stack)
         
         
         
