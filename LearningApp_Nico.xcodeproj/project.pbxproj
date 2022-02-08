@@ -11,6 +11,7 @@
 		342DDB6227AD89FC0046715D /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DDB6127AD89FC0046715D /* ContentDetailView.swift */; };
 		342DDB6527AD8DAE0046715D /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342DDB6427AD8DAE0046715D /* AVKit.framework */; };
 		342DDB6727AD8F1E0046715D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DDB6627AD8F1E0046715D /* Constants.swift */; };
+		348C56BD27B2EBEB00EB40EC /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348C56BC27B2EBEB00EB40EC /* RectangleCard.swift */; };
 		349F95852799C70400E7B8B0 /* LearningApp_Nico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349F95842799C70400E7B8B0 /* LearningApp_Nico.swift */; };
 		349F95872799C70400E7B8B0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349F95862799C70400E7B8B0 /* HomeView.swift */; };
 		349F95892799C70500E7B8B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349F95882799C70500E7B8B0 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		342DDB6127AD89FC0046715D /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		342DDB6427AD8DAE0046715D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		342DDB6627AD8F1E0046715D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		348C56BC27B2EBEB00EB40EC /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		349F95812799C70400E7B8B0 /* LearningApp_Nico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp_Nico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349F95842799C70400E7B8B0 /* LearningApp_Nico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp_Nico.swift; sourceTree = "<group>"; };
 		349F95862799C70400E7B8B0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				3426ED1927AC40CA00EA3CA2 /* ContentViewRow.swift */,
 				342DDB6127AD89FC0046715D /* ContentDetailView.swift */,
 				34FE6A7E27B0A0490042E3C8 /* CodeTextView.swift */,
+				348C56BC27B2EBEB00EB40EC /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				34FE6A7F27B0A0490042E3C8 /* CodeTextView.swift in Sources */,
 				349F95982799C7D200E7B8B0 /* ContentModel.swift in Sources */,
 				349F959F2799CC9500E7B8B0 /* Models.swift in Sources */,
+				348C56BD27B2EBEB00EB40EC /* RectangleCard.swift in Sources */,
 				342DDB6727AD8F1E0046715D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

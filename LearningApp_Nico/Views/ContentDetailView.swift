@@ -27,7 +27,7 @@ struct ContentDetailView: View {
                     .cornerRadius(10)
 
             }
-            //TODO:  Description
+            //Description
             CodeTextView()
             
             
@@ -36,25 +36,38 @@ struct ContentDetailView: View {
             if model.hasNextLesson(){
                 Button {
                     //Advance the lesson
-                    model.nextLesson()
+                    model.nextLesson()z
                 } label: {
                     
                     ZStack{
-                        Rectangle()
+                        RectangleCard(color: .green)
                             .frame(height: 48)
-                            .foregroundColor(Color.green)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
                         
                         //Next lesson name... that's why the +1 exists!
                         Text("Next Lesson: \(model.currentModule!.content.lessons[model.currentLessonIndex + 1].title)")
                             .bold()
                             .foregroundColor(.white)
                     }
-                    
-                    
-                    
+ 
                 }
+            }
+            else {
+                Button {
+                //Show button only where it's the last module
+                    //This will take the user to main menu
+                    model.currentContentSelected = nil
+                } label: {
+                    ZStack{
+                        RectangleCard(color: .green)
+                            .frame(height: 48)
+                        
+                        Text("Complete")
+                            .bold()
+                            .foregroundColor(.white)
+                    }
+ 
+                }
+
             }
             
 
