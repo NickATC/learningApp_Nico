@@ -28,8 +28,10 @@ struct ContentDetailView: View {
 
             }
             //TODO:  Description
+            CodeTextView()
             
-            //Next Lesson Botton
+            
+            //Next Lesson Button
             //Show button only if there is a next lesson
             if model.hasNextLesson(){
                 Button {
@@ -44,6 +46,7 @@ struct ContentDetailView: View {
                             .cornerRadius(10)
                             .shadow(radius: 5)
                         
+                        //Next lesson name... that's why the +1 exists!
                         Text("Next Lesson: \(model.currentModule!.content.lessons[model.currentLessonIndex + 1].title)")
                             .bold()
                             .foregroundColor(.white)
@@ -57,8 +60,7 @@ struct ContentDetailView: View {
 
         }
         .padding()
-        
-        
+        .navigationTitle(lesson?.title ?? "")
         
         
         //

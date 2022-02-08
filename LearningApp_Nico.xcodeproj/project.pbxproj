@@ -21,6 +21,7 @@
 		349F959F2799CC9500E7B8B0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349F959E2799CC9500E7B8B0 /* Models.swift */; };
 		34C6A05C27AC316000020145 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C6A05B27AC316000020145 /* ContentView.swift */; };
 		34E579B027AB50F900173429 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E579AF27AB50F900173429 /* HomeViewRow.swift */; };
+		34FE6A7F27B0A0490042E3C8 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE6A7E27B0A0490042E3C8 /* CodeTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		349F959E2799CC9500E7B8B0 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		34C6A05B27AC316000020145 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		34E579AF27AB50F900173429 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		34FE6A7E27B0A0490042E3C8 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				34C6A05B27AC316000020145 /* ContentView.swift */,
 				3426ED1927AC40CA00EA3CA2 /* ContentViewRow.swift */,
 				342DDB6127AD89FC0046715D /* ContentDetailView.swift */,
+				34FE6A7E27B0A0490042E3C8 /* CodeTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				342DDB6227AD89FC0046715D /* ContentDetailView.swift in Sources */,
 				349F95852799C70400E7B8B0 /* LearningApp_Nico.swift in Sources */,
 				3426ED1A27AC40CA00EA3CA2 /* ContentViewRow.swift in Sources */,
+				34FE6A7F27B0A0490042E3C8 /* CodeTextView.swift in Sources */,
 				349F95982799C7D200E7B8B0 /* ContentModel.swift in Sources */,
 				349F959F2799CC9500E7B8B0 /* Models.swift in Sources */,
 				342DDB6727AD8F1E0046715D /* Constants.swift in Sources */,
