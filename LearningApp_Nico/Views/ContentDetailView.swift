@@ -36,7 +36,7 @@ struct ContentDetailView: View {
             if model.hasNextLesson(){
                 Button {
                     //Advance the lesson
-                    model.nextLesson()z
+                    model.nextLesson()
                 } label: {
                     
                     ZStack{
