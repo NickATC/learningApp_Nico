@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3414A47227B8191A000C1A8E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414A47127B81919000C1A8E /* TestView.swift */; };
+		3423616127C004C000D9F32E /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423616027C004C000D9F32E /* TestResultView.swift */; };
 		3426ED1A27AC40CA00EA3CA2 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3426ED1927AC40CA00EA3CA2 /* ContentViewRow.swift */; };
 		342DDB6227AD89FC0046715D /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DDB6127AD89FC0046715D /* ContentDetailView.swift */; };
 		342DDB6527AD8DAE0046715D /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342DDB6427AD8DAE0046715D /* AVKit.framework */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		3414A47127B81919000C1A8E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		3423616027C004C000D9F32E /* TestResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
 		3426ED1927AC40CA00EA3CA2 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 		342DDB6127AD89FC0046715D /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		342DDB6427AD8DAE0046715D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -116,6 +118,7 @@
 				3426ED1927AC40CA00EA3CA2 /* ContentViewRow.swift */,
 				342DDB6127AD89FC0046715D /* ContentDetailView.swift */,
 				3414A47127B81919000C1A8E /* TestView.swift */,
+				3423616027C004C000D9F32E /* TestResultView.swift */,
 				34FE6A7E27B0A0490042E3C8 /* CodeTextView.swift */,
 				348C56BC27B2EBEB00EB40EC /* RectangleCard.swift */,
 			);
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3414A47227B8191A000C1A8E /* TestView.swift in Sources */,
+				3423616127C004C000D9F32E /* TestResultView.swift in Sources */,
 				349F95872799C70400E7B8B0 /* HomeView.swift in Sources */,
 				34E579B027AB50F900173429 /* HomeViewRow.swift in Sources */,
 				34C6A05C27AC316000020145 /* ContentView.swift in Sources */,

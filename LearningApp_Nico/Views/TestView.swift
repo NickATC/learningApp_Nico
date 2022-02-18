@@ -18,6 +18,8 @@ struct TestView: View {
     
     @State var numCorrect = 0 //To track the correct answer
     
+    
+    
     var body: some View {
         //
         if model.currentQuestion != nil {
@@ -131,10 +133,13 @@ struct TestView: View {
             .navigationBarTitle("\(model.currentModule?.category ?? "") Test")
         } else {
             // Test hasn't loaded yet// Another bug when this View is not fired using the .onAppear()
-            ProgressView()
-        }
             
-        
+            //ProgressView() This solves a bug of not loading the view
+            
+            
+            TestResultView(numCorrect: numCorrect)
+        }
+   
         //
     }
     
