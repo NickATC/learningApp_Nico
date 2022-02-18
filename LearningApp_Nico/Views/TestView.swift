@@ -91,19 +91,31 @@ struct TestView: View {
             
             //Submit Button
                 Button {
-                    //Change submitted state to true
-                    submitted = true
-                    
-                    //Check the answer
-                    if selectedAnswerIndex == model.currentQuestion!.correctIndex {
-                        numCorrect += 1
+                    //check if answer has been submitted
+                    if submitted == true {
+                        //answer has been submitted
+                        model.nextQuestion()
+                        
+                        //reset properties
+                        submitted = false
+                        selectedAnswerIndex = nil
+                    } else {
+                        //Submit the answer
+                        
+                        //Change submitted state to true
+                        submitted = true
+                        
+                        //Check the answer
+                        if selectedAnswerIndex == model.currentQuestion!.correctIndex {
+                            numCorrect += 1
+                        }
                     }
                 } label: {
                     ZStack{
                         RectangleCard(color: .green)
                             .frame(height: 48)
                         
-                        Text("Submit")
+                        Text(buttonText)
                             .bold()
                             .foregroundColor(.white)
                             
@@ -125,6 +137,19 @@ struct TestView: View {
         
         //
     }
+    
+    var buttonText: String {
+        if submitted == true {
+            if model.currentQuestionIndex + 1 == model.currentModule!.test.questions.count {
+                return "Finish!"
+            } else {
+                return "Next"
+            }
+        } else {
+            return "Submit"
+        }
+    }
+    
 }
 
 struct TestView_Previews: PreviewProvider {

@@ -12,8 +12,6 @@ struct ContentDetailView: View {
     
     @EnvironmentObject var model: ContentModel
     
-    
-    
     var body: some View {
         //
         let lesson = model.currentLesson
@@ -29,7 +27,6 @@ struct ContentDetailView: View {
             }
             //Description
             CodeTextView()
-            
             
             //Next Lesson Button
             //Show button only if there is a next lesson
@@ -48,7 +45,6 @@ struct ContentDetailView: View {
                             .bold()
                             .foregroundColor(.white)
                     }
- 
                 }
             }
             else {
@@ -65,12 +61,8 @@ struct ContentDetailView: View {
                             .bold()
                             .foregroundColor(.white)
                     }
- 
                 }
-
             }
-            
-
         }
         .padding()
         .navigationTitle(lesson?.title ?? "")
