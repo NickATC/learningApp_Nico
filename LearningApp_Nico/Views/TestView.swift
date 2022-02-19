@@ -70,16 +70,8 @@ struct TestView: View {
                                             RectangleCard(color: .white)
                                                 .frame(height: 48)
                                         }
-                                        
-                                        
-                                        
                                     }
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
+                 
                                     Text(model.currentQuestion!.answers[index])
                                 }
                             }
@@ -120,15 +112,10 @@ struct TestView: View {
                         Text(buttonText)
                             .bold()
                             .foregroundColor(.white)
-                            
                     }
                     .padding()
-
                 }
                 .disabled(selectedAnswerIndex == nil)
-
-                
-                
             }
             .navigationBarTitle("\(model.currentModule?.category ?? "") Test")
         } else {

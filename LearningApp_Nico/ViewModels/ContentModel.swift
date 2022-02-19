@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import CoreMedia
 
 class ContentModel: ObservableObject{
     
@@ -35,7 +36,8 @@ class ContentModel: ObservableObject{
     
     
     init(){
-        getLocalData()
+        getLocalData()  // To get the file in this bundle
+        getRemoteData() // To get the file from the internet!!!
         
     }
 
@@ -75,9 +77,58 @@ class ContentModel: ObservableObject{
         catch{
             print("couldn't parse style data")
         }
+    }
+    
+    func getRemoteData() {
+        //To get the data from the internet, and then parse it
         
+        //String path
+        let urlString = "https://nickatc.github.io/learningAppData/data2.json"
         
+        //Create URL object
+        let url = URL(string: urlString)
         
+        guard url != nil  else {
+            //Couldn't create url
+            return
+        }
+        
+        //Create a URLRequest object
+        let request = URLRequest(url: url!)
+        
+        //Get the session and kick off the task
+        let session = URLSession.shared
+        
+        let dataTask = session.dataTask(with: request) {( data, response, error) in
+            
+            //Check if there is an error from the response from the server/Webpage
+            guard error == nil else {
+                //There was an error
+                return
+            }
+            
+            //Handle the response
+            do {
+                //1.  Create JSON decoder
+                let decoder = JSONDecoder()
+                
+                //2.  Decode
+                let modules = try decoder.decode([Module].self, from: data!)
+                
+                //3.  Append parsed modules into property (array)
+                self.modules += modules
+            } catch {
+                //Couldn't parse json
+            }
+            
+            
+            
+            
+        }
+        
+        //Kick off the data task
+        
+        dataTask.resume()
         
     }
     
